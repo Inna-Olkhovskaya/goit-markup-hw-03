@@ -1,0 +1,229 @@
+:root {
+  --brand-color:#757575;
+  --brand-background: #F5F5F5;
+  --brand-accent: #2196F3;
+}
+
+
+body {
+font-family: Roboto, sans-serif;
+background-color: var(--brand-background);
+color: var(--brand-color);
+}
+
+/* logo */
+.logo {
+    font-family: Raleway, sans-serif;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    }
+.accent {
+    color: var(--brand-accent);
+}
+ 
+/* Links for blocks */
+.site-nav .link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+ .site-nav .link:hover,
+ .site-nav .link:focus {
+    color: var(--brand-accent);
+}
+
+/* Contacts */
+.contact-mail {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    }
+    .contact-mail:hover,
+    .contact-mail:focus {
+    color: var(--brand-accent);
+    }
+     .contact-tel {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+ }
+    .contact-tel:hover,
+    .contact-tel:focus {
+     color: var(--brand-accent);
+}
+
+/* Maine content */
+/*Banner studio */
+.banner {
+    background-color: #2F303A;
+}
+.hero-text {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.hero-button {
+   font-family: Roboto, sans-serif;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.88;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.06em;
+   cursor: pointer;
+}
+.hero-button:focus,
+.hero-button:hover {
+    color: #FFFFFF;
+    background-color: var(--brand-accent);
+}
+
+/*Peculiarities studio */
+.list {
+    list-style: none;
+}
+.hide {
+    color: #F5F5F5;
+}
+.list-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+.list-text {
+    font-size: 14px;
+    line-height: 1/71;
+    letter-spacing: 0.03em;
+}
+/* what we are doing studio */
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+
+}
+/* Our team studio */
+.list-heading {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.list-desc {
+    font-size: 16px;
+    line-height: 1.19;
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+}
+
+/* Our works portfolio */
+/* List of filters button */
+.button-list {
+    list-style: none;
+}
+.button-filter {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+    color: #212121;
+    cursor: pointer;
+    }
+.button-filter:hover,
+.button-filter:focus {
+    color: #FFFFFF;
+    background-color: var(--brand-accent);
+    }
+
+/*list of our projects */
+.list .link {
+    text-decoration: none;
+}
+.link-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+.link-desc {
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/*Footer with address & contacts */
+ footer {
+    background-color: #2F303A;
+ }
+ .logo-end {
+    font-family: Raleway, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+ }
+  address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+.contactend-mail {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    }
+    .contactend-mail:hover,
+    .contactend-mail:focus {
+    color: var(--brand-accent);
+    }
+     .contactend-tel {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+ }
+    .contactend-tel:hover,
+    .contactend-tel:focus {
+     color: var(--brand-accent);
+    }
+    

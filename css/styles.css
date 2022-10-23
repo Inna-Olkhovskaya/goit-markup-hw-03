@@ -1,240 +1,273 @@
 :root {
-  --brand-color:#757575;
-  --brand-background: #F5F5F5;
-  --brand-accent: #2196F3;
+  --brand-color: #757575;
+  --brand-background: #f5f5f5;
+  --brand-accent: #2196f3;
 }
-
 
 body {
-font-family: Roboto, sans-serif;
-background-color: var(--brand-background);
-color: var(--brand-color);
+  font-family: Roboto, sans-serif;
+  background-color: var(--brand-background);
+  color: var(--brand-color);
 }
 
-.contaner{
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    outline: 2px solid tomato;
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
 }
 /* logo */
 .logo {
-    font-family: Raleway, sans-serif;
-    color: #000000;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    }
-.accent {
-    color: var(--brand-accent);
+  font-family: Raleway, sans-serif;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
- 
+.accent {
+  color: var(--brand-accent);
+}
+
 /* Links for blocks */
 .site-nav .link {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #212121;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
 }
- .site-nav .link:hover,
- .site-nav .link:focus {
-    color: var(--brand-accent);
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--brand-accent);
 }
 
 /* Contacts */
 .contact-mail {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--brand-color);
-    }
-    .contact-mail:hover,
-    .contact-mail:focus {
-    color: var(--brand-accent);
-    }
-     .contact-tel {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--brand-color);
- }
-    .contact-tel:hover,
-    .contact-tel:focus {
-     color: var(--brand-accent);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--brand-color);
+}
+.contact-mail:hover,
+.contact-mail:focus {
+  color: var(--brand-accent);
+}
+.contact-tel {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--brand-color);
+}
+.contact-tel:hover,
+.contact-tel:focus {
+  color: var(--brand-accent);
 }
 
-/* Maine content */
+/* Main content */
 /*Banner studio */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .banner {
-    background-color: #2F303A;
+  background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-text {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
 }
 .hero-button {
-   font-family: Roboto, sans-serif;
-   font-weight: 700;
-   font-size: 16px;
-   line-height: 1.88;
-   display: flex;
-   align-items: center;
-   text-align: center;
-   letter-spacing: 0.06em;
-   cursor: pointer;
-   border-radius: 4px;
-   padding: 10px 32px;
-   width: 222px;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-   }
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: none;
+  /* border-color: transparent; */
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 216px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 .hero-button:focus,
 .hero-button:hover {
-    color: #FFFFFF;
-    background-color: var(--brand-accent);
+  color: #ffffff;
+  background-color: var(--brand-accent);
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-special {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
 /*Peculiarities studio */
 .list {
-    list-style: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .hide {
-    color: var(--brand-background);
+  color: var(--brand-background);
 }
 .list-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #212121;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+  margin-bottom: 10px;
 }
 .list-text {
-    font-size: 14px;
-    line-height: 1/71;
-    letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1/71;
+  letter-spacing: 0.03em;
 }
 /* what we are doing studio */
 .title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
 }
 /* Our team studio */
 .list-heading {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    /* text-align: center; */
-    letter-spacing: 0.03em;
-    color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 10px;
 }
 .list-desc {
-    font-size: 16px;
-    line-height: 1.19;
-    /* text-align: center; */
-    letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
 }
 
 /* Our works portfolio */
 /* List of filters button */
 .button-list {
-    list-style: none;
+  list-style: none;
 }
 .button-filter {
-    font-family: Roboto, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
-    /* text-align: center; */
-    letter-spacing: 0.03em;
-    color: #212121;
-    cursor: pointer;
-    }
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background-color: rgba(245, 244, 250, 1);
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: none;
+  /* border-color: transparent; */
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+}
 .button-filter:hover,
 .button-filter:focus {
-    color: #FFFFFF;
-    background-color: var(--brand-accent);
-    }
+  color: #ffffff;
+  background-color: var(--brand-accent);
+}
 
 /*list of our projects */
 .list .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 .link-name {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: #212121;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+  margin-bottom: 4px;
 }
 .link-desc {
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.03em;
-    color: var(--brand-color);
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--brand-color);
 }
 
 /*Footer with address & contacts */
- footer {
-    background-color: #2F303A;
- }
- .logo-end {
-    font-family: Raleway, sans-serif;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
- }
-  address {
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
- }
+footer {
+  background-color: #2f303a;
+}
+.logo-end {
+  font-family: Raleway, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .contactend-mail {
-    text-decoration: none;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    }
-    .contactend-mail:hover,
-    .contactend-mail:focus {
-    color: var(--brand-accent);
-    }
-     .contactend-tel {
-    text-decoration: none;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
- }
-    .contactend-tel:hover,
-    .contactend-tel:focus {
-     color: var(--brand-accent);
-    }
-    
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.contactend-mail:hover,
+.contactend-mail:focus {
+  color: var(--brand-accent);
+}
+.contactend-tel {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.contactend-tel:hover,
+.contactend-tel:focus {
+  color: var(--brand-accent);
+}

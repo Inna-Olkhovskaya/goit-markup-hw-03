@@ -11,6 +11,13 @@ background-color: var(--brand-background);
 color: var(--brand-color);
 }
 
+.contaner{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid tomato;
+}
 /* logo */
 .logo {
     font-family: Raleway, sans-serif;
@@ -46,7 +53,7 @@ color: var(--brand-color);
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--brand-color);
     }
     .contact-mail:hover,
     .contact-mail:focus {
@@ -58,7 +65,7 @@ color: var(--brand-color);
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--brand-color);
  }
     .contact-tel:hover,
     .contact-tel:focus {
@@ -89,7 +96,11 @@ color: var(--brand-color);
    text-align: center;
    letter-spacing: 0.06em;
    cursor: pointer;
-}
+   border-radius: 4px;
+   padding: 10px 32px;
+   width: 222px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   }
 .hero-button:focus,
 .hero-button:hover {
     color: #FFFFFF;
@@ -101,7 +112,7 @@ color: var(--brand-color);
     list-style: none;
 }
 .hide {
-    color: #F5F5F5;
+    color: var(--brand-background);
 }
 .list-title {
     font-weight: 700;
@@ -178,7 +189,7 @@ color: var(--brand-color);
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--brand-color);
 }
 
 /*Footer with address & contacts */

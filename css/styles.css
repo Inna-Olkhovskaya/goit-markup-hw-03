@@ -17,6 +17,10 @@ body {
   margin: 0 auto;
   outline: 2px solid tomato;
 }
+.main-nav {
+    display: flex;
+    align-items: center;
+}
 /* logo */
 .logo {
   font-family: Raleway, sans-serif;
@@ -26,12 +30,23 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-right: 93px;
 }
 .accent {
   color: var(--brand-accent);
 }
 
 /* Links for blocks */
+.site-nav {
+  display: flex;
+}
+.site-nav .item {
+  margin-right: 50px;
+  /* outline: 2px solid tomato; */
+}
+.site-nav .item:last-child {
+  margin-right: 0;
+}
 .site-nav .link {
   text-decoration: none;
   font-weight: 500;
@@ -39,6 +54,10 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+
+  /* display: block;
+  padding-top: 32px;
+  padding-bottom: 32px; */
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -53,7 +72,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--brand-color);
-}
+  margin-right: 50px;
+  outline: 2px solid tomato;
+  }
 .contact-mail:hover,
 .contact-mail:focus {
   color: var(--brand-accent);
@@ -65,6 +86,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--brand-color);
+  outline: 2px solid tomato;
 }
 .contact-tel:hover,
 .contact-tel:focus {
@@ -183,6 +205,7 @@ p {
 /* List of filters button */
 .button-list {
   list-style: none;
+  display: flex;
 }
 .button-filter {
   font-family: Roboto, sans-serif;
@@ -200,11 +223,16 @@ p {
   border-radius: 4px;
   padding: 6px 22px;
   min-width: 73px;
+
+  outline: 2px solid tomato;
 }
 .button-filter:hover,
 .button-filter:focus {
   color: #ffffff;
   background-color: var(--brand-accent);
+}
+.button-list .button-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 /*list of our projects */

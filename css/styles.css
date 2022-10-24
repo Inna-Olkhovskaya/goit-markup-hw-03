@@ -3,13 +3,11 @@
   --brand-background: #f5f5f5;
   --brand-accent: #2196f3;
 }
-
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--brand-background);
   color: var(--brand-color);
 }
-
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -17,9 +15,18 @@ body {
   margin: 0 auto;
   outline: 2px solid tomato;
 }
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header {
+  border-bottom: 1px solid #ECECEC;
+}
 .main-nav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  height: 80px;
 }
 /* logo */
 .logo {
@@ -35,8 +42,7 @@ body {
 .accent {
   color: var(--brand-accent);
 }
-
-/* Links for blocks */
+/* Site navigation */
 .site-nav {
   display: flex;
 }
@@ -54,17 +60,16 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
-
-  /* display: block;
-  padding-top: 32px;
-  padding-bottom: 32px; */
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--brand-accent);
 }
-
 /* Contacts */
+.contact-nav {
+  display: flex;
+  margin-left: auto;
+}
 .contact-mail {
   text-decoration: none;
   font-weight: 500;
@@ -73,8 +78,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--brand-color);
   margin-right: 50px;
-  outline: 2px solid tomato;
-  }
+  /* outline: 2px solid tomato; */
+}
 .contact-mail:hover,
 .contact-mail:focus {
   color: var(--brand-accent);
@@ -86,15 +91,13 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--brand-color);
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 .contact-tel:hover,
 .contact-tel:focus {
   color: var(--brand-accent);
 }
-
-/* Main content */
-/*Banner studio */
+/*Hero studio */
 h1,
 h2,
 h3,
@@ -105,16 +108,16 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
-.banner {
+.hero {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
-.hero-text {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -125,13 +128,9 @@ p {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
   border: none;
-  /* border-color: transparent; */
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 216px;
@@ -142,7 +141,6 @@ p {
   color: #ffffff;
   background-color: var(--brand-accent);
 }
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -152,13 +150,18 @@ p {
   padding-bottom: 0;
 }
 /*Peculiarities studio */
-.list {
-  list-style: none;
+.visually-hidden {
+  /* color: var(--brand-background); */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
   padding: 0;
-  margin: 0;
-}
-.hide {
-  color: var(--brand-background);
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .list-title {
   font-weight: 700;
@@ -200,7 +203,6 @@ p {
   /* text-align: center; */
   letter-spacing: 0.03em;
 }
-
 /* Our works portfolio */
 /* List of filters button */
 .button-list {
@@ -223,7 +225,6 @@ p {
   border-radius: 4px;
   padding: 6px 22px;
   min-width: 73px;
-
   outline: 2px solid tomato;
 }
 .button-filter:hover,
@@ -234,7 +235,6 @@ p {
 .button-list .button-item:not(:last-child) {
   margin-right: 8px;
 }
-
 /*list of our projects */
 .list .link {
   text-decoration: none;
@@ -253,7 +253,6 @@ p {
   letter-spacing: 0.03em;
   color: var(--brand-color);
 }
-
 /*Footer with address & contacts */
 footer {
   background-color: #2f303a;

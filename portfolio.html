@@ -18,30 +18,35 @@
 <body>
   <!--Main content-->
   <header>
-    <div class="container">
+    <div class="container main-nav">
       <nav class="main-nav">
         <!--Logo-->
-        <a class="logo" href=""> <span class="accent">Web</span>Studio</a>
-        <!--Links for blocks-->
+        <a class="logo" href="./index.html"> <span class="accent">Web</span>Studio</a>
+        <!--Site navigation-->
         <ul class="site-nav list">
-          <li class="item"><a class="link" href="./index.html">Студія</a></li>
+          <li class="item"><a class="link" href="/index.html">Студія</a></li>
           <li class="item"><a class="link" href="./portfolio.html">Портфоліо</a></li>
           <li class="item"><a class="link" href="">Контакти</a></li>
         </ul>
       </nav>
       <!--Contacts-->
-      <a class="contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a class="contact-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+      <ul class="contact-nav list">
+        <li>
+          <a class="contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li>
+          <a class="contact-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+      </ul>
     </div>
   </header>
-    <main>
+  <main>
     <section class="section">
       <div class="container">
-        <!--To hide the h1,h2 next-->
-        <h1 class="hide">Наші роботи</h1>
+        <h1 class="visually-hidden">Наші роботи</h1>
         <!-- List of filters button -->
-        <h2 class="hide">Фільтри для вибору</h2>
-        <ul class="button-list">
+        <h2 class="visually-hidden">Фільтри для вибору</h2>
+        <ul class="button-list list">
           <li class="button-item">
             <button type="button" class="button-filter">Усі</button>
           </li>
@@ -131,7 +136,7 @@
   <!-- Footer with address & contacts -->
   <footer>
     <div class="container">
-      <a class="logo-end" href=""> <span class="accent">Web</span>Studio</a>
+      <a class="logo-end" href="./index.html"> <span class="accent">Web</span>Studio</a>
       <address>
         м. Київ, пр-т Лесі Українки, 26 <br>
         <a class="contactend-mail" href="mailto:info@devstudio.com">info@devstudio.com</a> <br>
